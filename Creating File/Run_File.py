@@ -1,0 +1,12 @@
+from audio import audio
+w=open('task.txt','w')
+print(w.write("Hello!! \n"))
+print(w.write("My name is MiKe Davis.\n"))
+w.close()
+a=open('task.txt','a')
+print(a.write("I am 22 yrs old.\nDate of Birth 7 mar 2000."))
+a.close()
+r=open('task.txt','r')
+file=r.read()
+print(file)
+audio(file)
